@@ -1,0 +1,15 @@
+*.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# dotenv
+*.env
