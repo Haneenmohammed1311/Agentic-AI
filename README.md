@@ -12,7 +12,7 @@ Question asked in every files: What is the price of a laptop after applying a go
 
 `apply_discount(price, discount_tier)` applies a named tier. Gold is 23 percent off, bronze 5, silver 12. The numbers are unusual on purpose, so the model cannot guess the final answer without actually calling the tools.
 
-### File 1, `1_agent_loop_langchain_tool_calling.py`
+### **&rarr;** File 1, `1_agent_loop_langchain_tool_calling.py`
 
 **This is the LangChain version, and the baseline the other two files are compared against.**
 
@@ -28,7 +28,7 @@ The **`tool`**  decorator turns a plain function into something the model can ca
 
 **`What to take away from this file: this is what "it just works" looks like, and it works because LangChain is quietly building schemas, tracking ids, and formatting messages for you the whole time`**
 
-### File 2, `2_agent_loop_raw_function_calling.py`
+### **&rarr;** File 2, `2_agent_loop_raw_function_calling.py`
 
 **Same agent, LangChain removed, calling `ollama` directly.**
 
@@ -44,7 +44,7 @@ Tool results go back in as plain dictionaries, `{"role": "tool", "tool_name": to
 
 **`What to take away from this file: removing LangChain does not remove the underlying mechanism, structured tool calls still exist at the API level, LangChain was just formatting them for you. The real fragility in this file came from the model, not from writing the loop by hand.`**
 
-### File 3, `3_raw_react_prompt.py`
+### **&rarr;** File 3, `3_raw_react_prompt.py`
 
 **Same agent again, no LangChain and no structured tool calling at all. This is the ReAct pattern, how agents were built before models had a built in concept of tool calling.**
 
