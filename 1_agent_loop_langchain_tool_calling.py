@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langsmith import traceable
 
 MAX_ITERATIONS = 10 # Maximum number of iterations for the agent loop
-MODEL = "gemini-3.6-flash" # The model to use for the agent
+MODEL = "qwen3:0.6b" # The model to use for the agent
 @tool
 def get_product_price(product: str) -> float:
     """Look up the price of a product in the catalog."""
