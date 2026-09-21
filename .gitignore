@@ -13,3 +13,4 @@ ENV/
 
 # dotenv
 *.env
+chroma_db/
