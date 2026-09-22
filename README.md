@@ -6,12 +6,14 @@ Each lesson lives on its own branch, so `main` stays as a clean starting point w
 
 ## Structure
 
+## Structure
+
 | Branch | What it covers |
 |---|---|
-| `project/hello-world` | First LLM chain, prompt templates, basic LangChain wiring, LangSmith tracing |
-| `project/search-agent` | Search agent evolving from a custom tool to built-in `TavilySearch`, using `create_agent`, structured Pydantic outputs |
-| `project/agents-under-the-hood` | The same agent loop rebuilt three ways, LangChain tool calling, raw Ollama function calling, and a raw ReAct prompt with regex parsing, to see what `create_agent` hides |
-| `project/rag-gist` | A full RAG pipeline, ingestion into a vector store, then the same retrieval logic implemented manually and again with LCEL |
+| [project/hello-world](https://github.com/Haneenmohammed1311/Agentic-AI/tree/project/hello-world) | First LLM chain, prompt templates, basic LangChain wiring, LangSmith tracing |
+| [project/search-agent](https://github.com/Haneenmohammed1311/Agentic-AI/tree/project/search-agent) | Search agent evolving from a custom tool to built-in `TavilySearch`, using `create_agent`, structured Pydantic outputs |
+| [project/agents-under-the-hood](https://github.com/Haneenmohammed1311/Agentic-AI/tree/project/agents-under-the-hood) | The same agent loop rebuilt three ways, LangChain tool calling, raw Ollama function calling, and a raw ReAct prompt with regex parsing, to see what `create_agent` hides |
+| [project/rag-gist](https://github.com/Haneenmohammed1311/Agentic-AI/tree/project/rag-gist) | A full RAG pipeline, ingestion into a vector store, then the same retrieval logic implemented manually and again with LCEL |
 
 More branches will be added as I progress through the course.
 
