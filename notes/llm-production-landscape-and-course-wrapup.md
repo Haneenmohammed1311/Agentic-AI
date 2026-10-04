@@ -35,7 +35,7 @@ flowchart TD
 
 ---
 
-## 78, Privacy and Data Retention in Production
+## Privacy and Data Retention in Production
 
 This is the most consequential lecture of the chapter for anyone deploying to a regulated industry, finance, healthcare, legal.
 
@@ -99,7 +99,7 @@ Every branch you've built, Chroma as a local vector store, HuggingFace embedding
 
 ---
 
-## 79, Generative UI and UX, featuring CopilotKit
+## Generative UI and UX, featuring CopilotKit
 
 **The problem this space addresses.** A standard chat interface, the kind built in the documentation-helper branch, only returns text. But an agent's output is often structured, a form to fill out, a set of selectable options, a chart, a confirmation dialog, and cramming all of that into plain chat text is a poor user experience.
 
@@ -117,13 +117,13 @@ flowchart LR
 
 ---
 
-## 80, Official LangChain Academy Courses
+## Official LangChain Academy Courses
 
 LangChain maintains its own official, free learning courses, separate from this third party Udemy course, covering LangChain and LangGraph fundamentals directly from the source, at `academy.langchain.com`. Worth knowing these exist as a next step after this course, specifically because official documentation and courses track the current API more closely than any third party course can, given how quickly this ecosystem has changed even over the course of this project, multiple model deprecations and API shape changes already hit directly during this course's own branches.
 
 ---
 
-## 81, Open Source LLMs versus Managed LLM Providers, DeepSeek
+## Open Source LLMs versus Managed LLM Providers, DeepSeek
 
 A direct extension of the privacy and architecture discussion from lecture 78, framed here as a broader strategic decision rather than just a compliance one.
 
@@ -156,7 +156,7 @@ flowchart TD
 
 ---
 
-## 82, Confidence in AI Results, by Assaf Elovic and Harrison Chase
+## Confidence in AI Results, by Assaf Elovic and Harrison Chase
 
 This lecture addresses a problem that sits underneath everything built in this course so far, every single response from every model you've called has been treated as correct by default, with no mechanism checking whether it actually was.
 
@@ -174,26 +174,3 @@ This lecture addresses a problem that sits underneath everything built in this c
 
 ---
 
-## 83, AI FOMO is the New Normal
-
-**The core observation.** The pace of change in this specific field has been fast enough to be disorienting even within the span of a single course, directly confirmed by your own experience, `gemini-2.0-flash` was deprecated mid-course, LangChain's `init_chat_model` provider defaults shifted in ways that caused real bugs, and model recommendations from earlier in the course, `llama3.2:3b`, were later found less reliable than `qwen3` for tool calling, discovered through direct testing, not foreknowledge.
-
-**The practical response to this, rather than anxiety about constantly falling behind.** Depth in fundamentals outlasts any specific tool. Everything genuinely durable in this course, the RAG pipeline (load, split, embed, store, retrieve, augment, generate), the agent loop (reason, act, observe, repeat), and why context engineering matters, remains true regardless of which specific model or library implements it next year. The actual skill worth building is the ability to read an error message, check current documentation, and adapt quickly, exactly the debugging workflow practiced across every branch in this course, rather than trying to memorize a fixed stack that will inevitably shift.
-
----
-
-## 84, Finished the Course, What's Next
-
-Topics the course's own module list points toward beyond what's been built so far, useful for orienting future study, not yet covered in depth in this repo.
-
-- **LangGraph proper**, state graphs, checkpoints, persistence across sessions, and human-in-the-loop interrupts, going beyond the simple loops built by hand in the agents-under-the-hood branch.
-- **Multi-agent architectures and reflection or reflexion patterns**, agents that critique and improve their own output, or coordinate with sub-agents, directly connected to the sub-agent architecture discussed in the context engineering notes.
-- **Formal evaluation frameworks**, moving from manual, eyeballed testing to systematic benchmarking of agent and RAG quality, a natural next step given the confidence and trust discussion in lecture 82.
-- **MCP, the Model Context Protocol**, a standardized way for agents to discover and call external tools and data sources, named in the course's own title but not yet built hands-on in this repo.
-- **Agentic RAG**, retrieval that itself becomes multi-step and self-correcting, rather than a single retrieve-then-generate pass.
-
----
-
-## Summary, tying the whole chapter together
-
-This chapter moves outward from the code itself to the context a real LLM application has to survive in, who can see the data, what happens when a provider changes a model overnight, how a team decides between hosting their own weights or renting someone else's, and how anyone actually knows whether to trust what the model said. None of this changes how to write a LangChain chain, but all of it changes whether a chain built in this course is ready to become something a real company could actually ship.
