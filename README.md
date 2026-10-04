@@ -15,6 +15,14 @@ Each lesson lives on its own branch, so `main` stays as a clean starting point w
 | [project/agents-under-the-hood](https://github.com/Haneenmohammed1311/Agentic-AI/tree/project/agents-under-the-hood) | The same agent loop rebuilt three ways, LangChain tool calling, raw Ollama function calling, and a raw ReAct prompt with regex parsing, to see what `create_agent` hides |
 | [project/rag-gist](https://github.com/Haneenmohammed1311/Agentic-AI/tree/project/rag-gist) | A full RAG pipeline, ingestion into a vector store, then the same retrieval logic implemented manually and again with LCEL |
 
+## External repos
+
+Some lessons in this course are built as fully separate repositories rather than branches here, matching the instructor's own structure.
+
+| Repo | What it covers |
+|---|---|
+| [Documentation Helper](https://github.com/Haneenmohammed1311/Documentation-Helper) | A Streamlit RAG chat app over LangChain's own documentation, Tavily crawling, Chroma, and an agent with a cited-sources retrieval tool |
+
 More branches will be added as I progress through the course.
 
 ## Tech stack
