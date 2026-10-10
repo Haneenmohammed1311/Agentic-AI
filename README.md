@@ -22,7 +22,7 @@ Some lessons in this course are built as fully separate repositories rather than
 | Repo | What it covers |
 |---|---|
 | [Documentation Helper](https://github.com/Haneenmohammed1311/Documentation-Helper) | A Streamlit RAG chat app over LangChain's own documentation, Tavily crawling, Chroma, and an agent with a cited-sources retrieval tool |
-
+| [LangGraph Course](https://github.com/Haneenmohammed1311/Langgraph-Course) | LangGraph built from first principles. `main` covers a ReAct tool-calling agent, [reflection-agent](https://github.com/Haneenmohammed1311/Langgraph-Course/tree/reflection-agent) covers a self-critiquing generate-and-reflect loop, [reflexion-agent](https://github.com/Haneenmohammed1311/Langgraph-Course/tree/reflexion-agent) covers a research agent that critiques itself and revises with cited web search |
 More branches will be added as I progress through the course.
 
 ## Tech stack
