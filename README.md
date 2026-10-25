@@ -41,6 +41,7 @@ Theory chapters, written for review, with diagrams:
 
 - [Prompt theory and context engineering](notes/prompt-theory-and-context-engineering.md)
 - [LLM production landscape and course wrap-up](notes/llm-production-landscape-and-course-wrapup.md)
+- [Model Context Protocol (MCP)](notes/model-context-protocol.md)
 
 ## Tech stack
 
