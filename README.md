@@ -33,6 +33,7 @@ Some lessons are separate repositories instead of branches, matching how the cou
 | [Agentic RAG](https://github.com/Haneenmohammed1311/agentic-rag-langgraph) | Naive, corrective, and adaptive RAG as one LangGraph graph, with a local Chroma store, Tavily web search, and an LLM grading pipeline |
 | [Documentation Helper](https://github.com/Haneenmohammed1311/Documentation-Helper) | A Streamlit RAG chat app over LangChain's own documentation, with Tavily crawling, Chroma, and an agent that cites its sources |
 | [LangGraph Course](https://github.com/Haneenmohammed1311/LangGrapgh-Course) | LangGraph from first principles. `main` is a ReAct tool-calling agent, [project/reflection-agent](https://github.com/Haneenmohammed1311/LangGrapgh-Course/tree/project/reflection-agent) is a self-critiquing generate-and-reflect loop, and [project/reflexion-agent](https://github.com/Haneenmohammed1311/LangGrapgh-Course/tree/project/reflexion-agent) is a research agent that critiques itself and revises with cited web search |
+| [Model Context Protocol](https://github.com/Haneenmohammed1311/MCP-Course)|A baisic usage of the MCP|
 
 
 ## Notes
